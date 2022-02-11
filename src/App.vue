@@ -2,7 +2,7 @@
   <div class="app">
     <header-page></header-page>
     <banner-page @close="banner = false" v-if="banner"></banner-page>
-    <trainer-page></trainer-page>
+    <trainer-page v-if="!banner"></trainer-page>
   </div>
 </template>
 
